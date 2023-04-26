@@ -141,12 +141,19 @@ for key in upload_max_filesize post_max_size max_execution_time max_input_time m
 done
 
 
-echo "--- Restarting Apache… ---"
-systemctl restart apache2 > /dev/null
+#echo "--- Restarting Apache… ---"
+#systemctl restart apache2 > /dev/null
+
+
+echo "--- Stopping Apache… ---"
+systemctl stop apache2 > /dev/null
+rm -rf /var/www/MISP
+echo "--- Starting Apache… ---"
+systemctl start apache2 > /dev/null
 
 
 echo "--- Retrieving MISP… ---"
-if [ "$MISP_ENV" != "dev" ]; then
+#if [ "$MISP_ENV" != "dev" ]; then
     mkdir -p "$PATH_TO_MISP"
     chown www-data:www-data "$PATH_TO_MISP"
     cd "$PATH_TO_MISP" || exit 1
@@ -155,10 +162,10 @@ if [ "$MISP_ENV" != "dev" ]; then
         exit 1
     fi
     sudo -u www-data -H git clone https://github.com/MISP/MISP.git "$PATH_TO_MISP" || exit 1
-else
-    chown www-data:www-data "$PATH_TO_MISP"
-    cd "$PATH_TO_MISP" || exit 1
-fi
+#else
+#    chown www-data:www-data "$PATH_TO_MISP"
+#    cd "$PATH_TO_MISP" || exit 1
+#fi
 
 if [ -d .git ]; then
     sudo -u www-data -H git config core.filemode false
@@ -196,15 +203,15 @@ fi
 from sed
 
 # la chaîne de caractères contenant les mots à nettoyer
-string = "Je suis    une chaîne avec  des   espaces     et des    tabulations\t  \t"
+#string = "Je suis    une chaîne avec  des   espaces     et des    tabulations\t  \t"
 
 # supprimer les espaces et les tabulations en début et fin de chaîne
-string = string.strip()
+#string = string.strip()
 
 # remplacer tous les espaces et les tabulations qui se suivent par un seul espace
-string = re.sub(r'\s+', ' ', string)
+#string = re.sub(r'\s+', ' ', string)
 
-print(string) # affiche "Je suis une chaîne avec des espaces et des tabulations"
+#print(string) # affiche "Je suis une chaîne avec des espaces et des tabulations"
 
 python3 setup.py install
 
