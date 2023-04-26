@@ -13,7 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   # config.vm.box = "ubuntu/artful64"
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/focal64"
   config.vm.provision :shell, path: "bootstrap.sh", args: MISP_ENV.to_s
 
   # Disable automatic box update checking. If you disable this, then
@@ -26,7 +26,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network :forwarded_port, guest: 80, host: 5000
   config.vm.network :forwarded_port, guest: 6666, host: 6666
-
+  config.vm.network :forwarded_port, guest: 22, host: 2210
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   disabled = true
-  vm_name = "MISP - Ubuntu 18.04"
+  vm_name = "MISP-Ubuntu 20.04"
   if MISP_ENV.to_s == "dev"
     disabled = false
     vm_name.concat(" - DEV")

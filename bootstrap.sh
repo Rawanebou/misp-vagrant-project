@@ -42,7 +42,7 @@ post_max_size=50M
 max_execution_time=300
 max_input_time=223
 memory_limit=512M
-PHP_INI=/etc/php/7.2/apache2/php.ini
+PHP_INI=/etc/php/7.4/apache2/php.ini
 
 export DEBIAN_FRONTEND=noninteractive
 export LANGUAGE=en_US.UTF-8
@@ -58,7 +58,7 @@ apt-get update
 
 
 echo "--- Install base packages… ---"
-apt-get -y install curl net-tools ifupdown gcc git gnupg-agent make python openssl redis-server sudo vim zip > /dev/null
+apt-get -y install curl net-tools ifupdown gcc git gnupg-agent make python3.7 openssl redis-server sudo vim zip > /dev/null
 
 
 echo "--- Installing and configuring Postfix… ---"
@@ -111,14 +111,33 @@ a2ensite default-ssl > /dev/null
 
 
 echo "--- Installing PHP-specific packages… ---"
+apt-get update
 apt-get install -y libapache2-mod-php php php-cli php-gnupg php-dev php-json php-mysql php-opcache php-readline php-redis php-xml php-mbstring php-gd > /dev/null
 
 
 
-echo -e "\n--- Configuring PHP (sane PHP defaults)… ---\n"
-for key in upload_max_filesize post_max_size max_execution_time max_input_time memory_limit
-do
- sed -i "s/^\($key\).*/\1 = $(eval echo \${$key})/" $PHP_INI
+
+# Configurer les paramètres de configuration PHP par défaut
+echo "\n--- Configuring PHP (sane PHP defaults)… ---\n"
+
+
+for key in upload_max_filesize post_max_size max_execution_time max_input_time memory_limit; do
+  if [[ -f "$PHP_INI" ]]; then
+    # Valider la valeur de configuration
+    value=$(eval echo \${$key})
+    if ! [[ "$value" =~ ^[0-9]+[M|m]$ ]]; then
+      echo  "Invalid value for %s: %s\n" "$key" "$value"
+      continue
+    fi
+
+    # Modifier la valeur de configuration
+    sudo sed -i "s/^\($key\).*/\1 = $value/" "$PHP_INI"
+
+    # Afficher un message de confirmation
+    echo "PHP configuration updated: %s = %s\n" "$key" "$value"
+  else
+    echo "PHP configuration file not found: %s\n" "$PHP_INI"
+  fi
 done
 
 
@@ -128,54 +147,101 @@ systemctl restart apache2 > /dev/null
 
 echo "--- Retrieving MISP… ---"
 if [ "$MISP_ENV" != "dev" ]; then
-    mkdir $PATH_TO_MISP
-    chown www-data:www-data $PATH_TO_MISP
-    cd $PATH_TO_MISP
-    sudo -u www-data -H git clone https://github.com/MISP/MISP.git $PATH_TO_MISP
+    mkdir -p "$PATH_TO_MISP"
+    chown www-data:www-data "$PATH_TO_MISP"
+    cd "$PATH_TO_MISP" || exit 1
+    if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+        echo "Error: Not in a git directory"
+        exit 1
+    fi
+    sudo -u www-data -H git clone https://github.com/MISP/MISP.git "$PATH_TO_MISP" || exit 1
 else
-    chown www-data:www-data $PATH_TO_MISP
-    cd $PATH_TO_MISP
+    chown www-data:www-data "$PATH_TO_MISP"
+    cd "$PATH_TO_MISP" || exit 1
 fi
-#sudo -u www-data -H git checkout tags/$(git describe --tags `git rev-list --tags --max-count=1`)
-sudo -u www-data -H git config core.filemode false
-# chown -R www-data $PATH_TO_MISP
-# chgrp -R www-data $PATH_TO_MISP
-# chmod -R 700 $PATH_TO_MISP
+
+if [ -d .git ]; then
+    sudo -u www-data -H git config core.filemode false
+else
+    echo "Error: Not in a git directory"
+    exit 1
+fi
+
+echo "Current directory: $(pwd)"
+
+
 
 
 echo "--- Installing Mitre's STIX… ---"
-apt-get install -y python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev python-setuptools > /dev/null
+apt-get update
+apt-get install -y python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev python3-setuptools
+if [ -d "/var/www/MISP/app/files/scripts" ]; then
+  cd /var/www/MISP/app/files/scripts
+else
+  echo "Directory /var/www/MISP/app/files/scripts does not exist."
+fi
+if [ -d "/var/www/MISP/app/files/scripts/python-cybox" ]; then
+  rm -rf /var/www/MISP/app/files/scripts/python-cybox
+fi
+git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cybox > /dev/null
+cd /var/www/MISP/app/files/scripts/python-cybox
+python3 setup.py install
+if [ -d "/var/www/MISP/app/files/scripts/python-cybox/.git" ]; then
+  cd /var/www/MISP/app/files/scripts/python-cybox
+  git pull
+else
+  git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cybox > /dev/null
+  cd /var/www/MISP/app/files/scripts/python-cybox
+fi
+from sed
+
+# la chaîne de caractères contenant les mots à nettoyer
+string = "Je suis    une chaîne avec  des   espaces     et des    tabulations\t  \t"
+
+# supprimer les espaces et les tabulations en début et fin de chaîne
+string = string.strip()
+
+# remplacer tous les espaces et les tabulations qui se suivent par un seul espace
+string = re.sub(r'\s+', ' ', string)
+
+print(string) # affiche "Je suis une chaîne avec des espaces et des tabulations"
+
+python3 setup.py install
+
 cd $PATH_TO_MISP/app/files/scripts
 sudo -u www-data -H git clone https://github.com/CybOXProject/python-cybox.git
 sudo -u www-data -H git clone https://github.com/STIXProject/python-stix.git
 cd $PATH_TO_MISP/app/files/scripts/python-cybox
 sudo -u www-data -H git checkout v2.1.0.12
-python setup.py install > /dev/null
+python3 setup.py install > /dev/null
 cd $PATH_TO_MISP/app/files/scripts/python-stix
 sudo -u www-data -H git checkout v1.1.1.4
-python setup.py install > /dev/null
+python3 setup.py install > /dev/null
 # install mixbox to accomodate the new STIX dependencies:
 cd $PATH_TO_MISP/app/files/scripts/
 sudo -u www-data -H git clone https://github.com/CybOXProject/mixbox.git
 cd $PATH_TO_MISP/app/files/scripts/mixbox
 sudo -u www-data -H git checkout v1.0.2
-python setup.py install > /dev/null
+python3 setup.py install > /dev/null
+
+
 
 
 echo "--- Retrieving CakePHP… ---"
 # CakePHP is included as a submodule of MISP, execute the following commands to let git fetch it:
 cd $PATH_TO_MISP
-sudo -u www-data -H git submodule init
-sudo -u www-data -H git submodule update
+sudo -u www-data -H git submodule update --init --recursive
 # Once done, install CakeResque along with its dependencies if you intend to use the built in background jobs:
 cd $PATH_TO_MISP/app
 sudo -u www-data -H php composer.phar require kamisama/cake-resque:4.1.2
 sudo -u www-data -H php composer.phar config vendor-dir Vendor
-sudo -u www-data -H php composer.phar install
+sudo -u www-data -H php composer.phar install --no-cache --no-dev
 # Enable CakeResque with php-redis
 phpenmod redis
 # To use the scheduler worker for scheduled tasks, do the following:
 sudo -u www-data -H cp -fa $PATH_TO_MISP/INSTALL/setup/config.php $PATH_TO_MISP/app/Plugin/CakeResque/Config/config.php
+sudo chown -R www-data:www-data /var/www/.cache/composer
+
 
 
 echo "--- Setting the permissions… ---"
@@ -319,12 +385,12 @@ sed -i -e '$i \sudo -u www-data -H bash /var/www/MISP/app/Console/worker/start.s
 
 
 echo "--- Installing MISP modules… ---"
-apt-get install -y python3-dev python3-pip libpq5 libjpeg-dev > /dev/null
+apt-get install -y python3.7-dev python3.7-pip libpq5 libjpeg-dev > /dev/null
 cd /usr/local/src/
 git clone https://github.com/MISP/misp-modules.git
 cd misp-modules
-pip3 install -I -r REQUIREMENTS > /dev/null
-pip3 install -I . > /dev/null
+pip3.7 install -I -r REQUIREMENTS > /dev/null
+pip3.7 install -I . > /dev/null
 # With systemd:
 # sudo cat > /etc/systemd/system/misp-modules.service  <<EOF
 # [Unit]
@@ -344,25 +410,23 @@ pip3 install -I . > /dev/null
 # With initd:
 sed -i -e '$i \sudo -u www-data -H misp-modules -l 0.0.0.0 -s &\n' /etc/rc.local
 
-
 echo "--- Restarting Apache… ---"
-systemctl restart apache2 > /dev/null
+sudo systemctl restart apache2 > /dev/null
 sleep 5
 
-
 sudo -E $PATH_TO_MISP/app/Console/cake userInit -q > /dev/null
-AUTH_KEY=$(mysql -u $DBUSER_MISP -p$DBPASSWORD_MISP misp -e "SELECT authkey FROM users;" | tail -1)
+AUTH_KEY=$(sudo mysql -u $DBUSER_MISP -p$DBPASSWORD_MISP misp -e "SELECT authkey FROM users ORDER BY id DESC LIMIT 1;" | tail -1)
 echo "--- Updating the galaxies… ---"
-curl --header "Authorization: $AUTH_KEY" --header "Accept: application/json" --header "Content-Type: application/json" -o /dev/null -s -X POST http://127.0.0.1/galaxies/update
+curl -s -H "Authorization: $AUTH_KEY" -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost/galaxies/sync
 
 echo "--- Updating the taxonomies… ---"
-curl --header "Authorization: $AUTH_KEY" --header "Accept: application/json" --header "Content-Type: application/json" -o /dev/null -s -X POST http://127.0.0.1/taxonomies/update
+curl -s -H "Authorization: $AUTH_KEY" -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost/taxonomies/sync
 
 echo "--- Updating the warning lists… ---"
-curl --header "Authorization: $AUTH_KEY" --header "Accept: application/json" --header "Content-Type: application/json" -o /dev/null -s -X POST http://127.0.0.1/warninglists/update
+curl -s -H "Authorization: $AUTH_KEY" -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost/warninglists/sync
 
 echo "--- Updating the object templates… ---"
-curl --header "Authorization: $AUTH_KEY" --header "Accept: application/json" --header "Content-Type: application/json" -o /dev/null -s -X  POST http://127.0.0.1/objectTemplates/update
+curl -s -H "Authorization: $AUTH_KEY" -H "Accept: application/json" -H "Content-Type: application/json" -X POST http://localhost/objectTemplates/sync
 
 
 # echo "--- Enabling MISP new pub/sub feature (ZeroMQ)… ---"
