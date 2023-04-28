@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
   disabled = true
-  vm_name = "MISP-Ubuntu 20.04"
+  vm_name = " MISP   -   Ubuntu 20.04"
   if MISP_ENV.to_s == "dev"
     disabled = false
     vm_name.concat(" - DEV")

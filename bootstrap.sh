@@ -129,7 +129,6 @@ for key in upload_max_filesize post_max_size max_execution_time max_input_time m
       echo  "Invalid value for %s: %s\n" "$key" "$value"
       continue
     fi
-
     # Modifier la valeur de configuration
     sudo sed -i "s/^\($key\).*/\1 = $value/" "$PHP_INI"
 
@@ -141,15 +140,16 @@ for key in upload_max_filesize post_max_size max_execution_time max_input_time m
 done
 
 
-#echo "--- Restarting Apache… ---"
-#systemctl restart apache2 > /dev/null
+
+echo "--- Restarting Apache… ---"
+systemctl restart apache2 > /dev/null
 
 
-echo "--- Stopping Apache… ---"
-systemctl stop apache2 > /dev/null
-rm -rf /var/www/MISP
-echo "--- Starting Apache… ---"
-systemctl start apache2 > /dev/null
+#echo "--- Stopping Apache… ---"
+#systemctl stop apache2 > /dev/null
+#rm -rf /var/www/MISP
+#echo "--- Starting Apache… ---"
+#systemctl start apache2 > /dev/null
 
 
 echo "--- Retrieving MISP… ---"
@@ -178,7 +178,6 @@ echo "Current directory: $(pwd)"
 
 
 
-
 echo "--- Installing Mitre's STIX… ---"
 apt-get update
 apt-get install -y python3-dev python3-pip libxml2-dev libxslt1-dev zlib1g-dev python3-setuptools
@@ -190,14 +189,14 @@ fi
 if [ -d "/var/www/MISP/app/files/scripts/python-cybox" ]; then
   rm -rf /var/www/MISP/app/files/scripts/python-cybox
 fi
-git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cybox > /dev/null
+git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cy>
 cd /var/www/MISP/app/files/scripts/python-cybox
 python3 setup.py install
 if [ -d "/var/www/MISP/app/files/scripts/python-cybox/.git" ]; then
   cd /var/www/MISP/app/files/scripts/python-cybox
   git pull
 else
-  git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cybox > /dev/null
+  git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python->
   cd /var/www/MISP/app/files/scripts/python-cybox
 fi
 from sed
@@ -230,7 +229,6 @@ sudo -u www-data -H git clone https://github.com/CybOXProject/mixbox.git
 cd $PATH_TO_MISP/app/files/scripts/mixbox
 sudo -u www-data -H git checkout v1.0.2
 python3 setup.py install > /dev/null
-
 
 
 
