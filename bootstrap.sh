@@ -1,5 +1,4 @@
 #! /usr/bin/env bash
-
 MISP_ENV=$1
 if [ "$MISP_ENV" != "dev" ]; then
     echo "Deployment of a MISP demo environment..."
@@ -153,29 +152,19 @@ systemctl restart apache2 > /dev/null
 
 
 echo "--- Retrieving MISP… ---"
-#if [ "$MISP_ENV" != "dev" ]; then
-    mkdir -p "$PATH_TO_MISP"
-    chown www-data:www-data "$PATH_TO_MISP"
-    cd "$PATH_TO_MISP" || exit 1
-    if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-        echo "Error: Not in a git directory"
-        exit 1
-    fi
-    sudo -u www-data -H git clone https://github.com/MISP/MISP.git "$PATH_TO_MISP" || exit 1
-#else
-#    chown www-data:www-data "$PATH_TO_MISP"
-#    cd "$PATH_TO_MISP" || exit 1
-#fi
 
-if [ -d .git ]; then
-    sudo -u www-data -H git config core.filemode false
-else
-    echo "Error: Not in a git directory"
-    exit 1
+if [ "$MISP_ENV" != "dev" ]; then
+    mkdir $PATH_TO_MISP
+    sudo chown www-data:www-data $PATH_TO_MISP
+    sudo -u www-data git clone https://github.com/MISP/MISP.git $PATH_TO_MISP
 fi
-
-echo "Current directory: $(pwd)"
-
+sudo chown www-data:www-data $PATH_TO_MISP
+cd $PATH_TO_MISP
+#sudo -u www-data git checkout tags/$(git describe --tags `git rev-list --tags --max-count=1`)
+sudo -u www-data git config core.filemode false
+# chown -R www-data $PATH_TO_MISP
+# chgrp -R www-data $PATH_TO_MISP
+#chmod -R 750 $PATH_TO_MISP
 
 
 echo "--- Installing Mitre's STIX… ---"
@@ -189,14 +178,14 @@ fi
 if [ -d "/var/www/MISP/app/files/scripts/python-cybox" ]; then
   rm -rf /var/www/MISP/app/files/scripts/python-cybox
 fi
-git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cy>
+git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-cybox.git
 cd /var/www/MISP/app/files/scripts/python-cybox
 python3 setup.py install
 if [ -d "/var/www/MISP/app/files/scripts/python-cybox/.git" ]; then
   cd /var/www/MISP/app/files/scripts/python-cybox
   git pull
 else
-  git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python->
+  git clone https://github.com/CybOXProject/python-cybox.git /var/www/MISP/app/files/scripts/python-stix.git
   cd /var/www/MISP/app/files/scripts/python-cybox
 fi
 from sed
