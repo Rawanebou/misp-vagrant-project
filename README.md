@@ -72,99 +72,69 @@ Maintenant que vous vous êtes familiarisé avec cette organisation en apprenant
 et à l'explication de mon sujet.
 
 
-## Mon sujet : explication, avancé et but
-Afin de menez a bien l'eplication détailée de mon projet je vais tout d'abord vous introduire
-l'intutulé de mon stage, ce que je dois m'a été initialement demander lors la prépartion de mon
-stage, je vais continuer par les outils qui m'ont etait mis a disposition ainsi que les logiciel
-qui m'ont était demander d'utiliser afin de mener à terme mon projet et enfin je finirai par vous 
-présenter ce que j'ai pue faire durant ce premier mois et ce qui me resterais à faire.
+## Sujet de stage 
 
 ### Intitulé du suejt de stage 
 
-L'intitulé du sujet de stage est le suivant MSc Student Internship Position - Improvement of
-Virtualisation and Orchestration of Training Infrastructure qui se traduit part Poste de stage pour
-étudiant(e) en master - Amélioration de la virtualisation et de l'orchestration del'infrastructure
-de formation. Comme vous l'avez bien remarqué le sujet n'est pas réeelement adaptée à mon niveau 
-actuelle d'étude mais lors de mon choix de sujet de stage, ce sujet semblais se rapprocher le plus
-de ce que je voulais entreprendre dans mes etudes futur et cela pourrait constuter un réel
-challenge pour moi en me poussant à me surpasser et à découvrir d'avantage de choses.
-Pour réussir ce travail j'ai dinc une certain nombre de tâches et de maîtrise à avoir.
-Je dois tout d'abord etre en mesure de maitriser le SCM (Source Control Management) git, pour
-continuer je dois etre en mesure de procéder au déploiment et installation d' infrastructure threat
-intel MISP en VM afin de contribuer activement à ce meme projet open source.Et enfin je dois
-acquérir des compétences en bash et Unix scripting. 
-Ayant eu la chance de manipuler git lors de mes heures d'enseignement et du bash et Unix scripting
-en première année de mon cursus en BUT informatique j'ai quelques bases sur lesquels m'appuyer même
-si mes compétences en bash sont très minime.
+Afin de mener à bien l'explication détaillée de mon projet, je vais tout d'abord vous présenter l'intitulé de mon stage ainsi que ce qui m'a été initialement demandé lors de la préparation de celui-ci.
+Je vais ensuite poursuivre en vous présentant les outils qui m'ont été mis à disposition ainsi que les logiciels que l'on m'a demandé d'utiliser afin de mener à terme mon projet.
+Enfin, je conclurai en vous présentant ce que j'ai pu faire durant ce premier mois et ce qu'il me reste à faire.
+
+L'intitulé du sujet de stage est le suivant : "MSc Student Internship Position - Improvement of Virtualisation and Orchestration of Training Infrastructure",ce qui se traduit par "Poste de stage pour
+étudiant(e) en master - Amélioration de la virtualisation et de l'orchestration de l'infrastructure de formation". Comme vous l'aurez remarqué, le sujet n'est pas réellement adapté à mon niveau
+actuel d'études. Cependant, lors de mon choix de sujet de stage, celui-ci semblait se rapprocher le plus de ce que je voulais entreprendre dans mes études futures. Cela pourrait également constituer
+un réel défi pour moi, en me poussant à me surpasser et à découvrir davantage de choses.
+
+Pour réussir ce travail, j'ai donc un certain nombre de tâches et de maîtrises à acquérir. Tout d'abord, je dois être en mesure de maîtriser le SCM (Source Control Management) Git. Ensuite, je dois être
+en mesure de procéder au déploiement et à l'installation de l'infrastructure threat intel MISP en VM afin de contribuer activement à ce même projet open source. Enfin, je dois acquérir des compétences
+en Bash et en Unix scripting.
+
+Ayant eu la chance de manipuler Git lors de mes heures d'enseignement et d'avoir des bases en Bash et en Unix scripting en première année de mon cursus en BUT informatique, je dispose de certaines
+compétences sur lesquelles m'appuyer, même si mes compétences en Bash sont encore très limitées.
 
 
 ### Outils et logiciel mis a disposition
 
-Bien évidement au vue de l'intitule de mon stage je ne serais pas amener à utiliser des switchs ou
-des routeurs ou ce genre de chose que l'on a pu pratiquer de nombreuses fois en traveaux pratiques
-den réseaux avancée par exemple mais de manipuler exclusivement grâce à un ordinateur comme en
-cours de virtualisation par exemple.
-De ce fait un orinateur portable et dans lequel je travail sur ubuntu 22.04 et c'est le seul outil
-outil materiel qui m'a été fournis et terme de logiciel j'ai été amener à utiliser principalement
-Vagrant, VirtualBox et Virtualbox.
-Du fait qu'il n'y au pas beaucoup de nouvel outils materiel et ou logiciel instinctivement une 
-personne peut penser que l'apprentaissage de l'utilisation de ces équipement n'est pas si 
-compliquer mais c'est uniquement lorsque l'ont entre dans le vive du sujet que nous mesurons 
-la difficulté, chose que l'on va analyser directement au point suivant.
+Bien évidemment, au vu de l'intitulé de mon stage, je ne serai pas amené à utiliser des switchs ou des routeurs ou ce genre de chose que l'on a pu pratiquer de nombreuses fois en travaux pratiques de
+réseaux avancés, par exemple, mais à manipuler exclusivement grâce à un ordinateur comme en cours de virtualisation, par exemple. De ce fait, un ordinateur portable sur lequel je travaille sous
+Ubuntu 22.04 est le seul outil matériel qui m'a été fourni. En termes de logiciel, j'ai été amené à utiliser principalement Vagrant, VirtualBox et Virtualbox.
+Du fait qu'il n'y a pas beaucoup de nouveaux outils matériels et/ou logiciels, instinctivement, une personne peut penser que l'apprentissage de l'utilisation de ces équipements n'est pas si compliqué,
+mais c'est uniquement lorsque l'on entre dans le vif du sujet que nous mesurons la difficulté, chose que nous allons analyser directement au point suivant.
 
 ### Qu'est-ce que j'ai appris / qu'est ce que j'ai fait / qu'est ce que j'ai utiliser ?
 
-Pour débuter correctement mon stage j'ai tout d'abord tenu à me documnenter un maximum sur mon
-sujet, sur le projet MISP, sur vagrant, sur VirtualBox et sur tout ce qui est liée de près ou de 
-loin à tout ce que je viens de vous énumerer.Consacréer un moment pour comprendre l'utilisation 
-de ces logiciel, pourquoi devrais-je les utiliser, coment et dans quel but à été à mon sens une la
-bonne chose à faire car dans le cas contraire je trouve que le travail aurait été en quelque 
-sorte baclée parce que le travail aurait très bine pue continuer mais sans connaissance solide et 
-avec je pense moins d'efficacité alors que le proejt et deja assez complexe.
-J'ai par ailleurs utiliser d'autre choses suite au conseil avisé de mon tuteur tel que HedgeDoc 
-qui me permet de mettre en page chaques jours les tâches accomplis en donnant la possibilitée par
-la même occasion à mes collègues de voir mon avancée, d'apporter des modification à ce que j'ai 
-fait. Mais ce n'est en revanche pas le seul outils de collaboration utilisée, on m'a proposer
-d'utilisé Element afin d'achanger avec chacun des personnes présente ou avec elle toutes en même
-temps afin d'avoir des réponse rapide.
-Après cette phase de documentation nous devons maintenant commencer essayer quelque manipulation.
-Conformément aux propos précédents j'ai commencer à utiliser la virtualbox a l'aide vagrant, j'ai
-continuer par la modification des fichier présent dans misp-vagrant.
-Nous entrons maintenant dans le vive du sujet.Comme je vous l'avez expliquer au préalable MISP est
-une plateforme de partage de au sujet des attaques et menaces informatique, misp-vagrant lui va
-fournir une configuration pré-défini au déploiment de MISP et contribue à cette communoté en y 
-signalant des bugs tout en proposant des amélioration.
-Les fichiers présent dans misp-vagrant sont assez vieux et avec toutes les avancées que l'on a fait 
-les nouvelle version de tout les outils utilisée, les fichier que l'on a actuellement en notre
-possession présente un certain nombre d'erreur. Ma mission au cours de ces deux mois de stage sera
-de faire les modification nécéssaire afin qu'il n'y ai plus d'erreur, cela implique le changement
-par exemple le changement des version des outils installer. Si cela ne consitser à simplement 
-changer les version installer de differents outils préalablement cela irait assez vite, mais nous 
-devons prendre en compte que le mise à jour de ces fichier peut impacter d'autre fuchier qui y
-sont liée et la est la complexité ce ce projet, il faut faire en sorte que tout concorde
-parfaitement. Revenons au compétences que je dois acquérir ou développer nous avions stripuler 
-l'utilisation du bash et Unix scripting mais je n'en ai pourtant toujours parler depuis la 
-description de ce que j'ai pue faire depuis le début, pourtant c'est l'une des compétences que je 
-suis amenée actuellement à utilisée le plus. Les fichiers présents dans le dosssier misp-vagrant 
-et que je dois principalement modifier sont exclusivement programmer en bash et n'etant pas une 
-expert dans ce langange de programmation je me suis bien documenter et ai un peu lus quelques
-livre afin de consolider des conaissance. Nous le savons avoir des connaissnace est très utiles
-mais savoir les utiliser er correctement est mieux. C'est donc après cela que les nombreux test on 
-reelement commencer (même si bien évidement des test ont était préalablement etait afin de
-commencer à manipuler). J'ai tout d'abord commencer par localiser les erreurs afin d'esssayer de 
-les neutrliser une à une, j'ai très vite compris que essayer d'éliminer les erreurs une à une sans
-prendre en compte le reste du code était une mauvaise idée car tout est liée ce qui engendre que
-simple modification d'une partie de code ne prenant pas en compte le reste du code engendre encore
-de nouvelle erreur. Le travail est donc très minitieux et complexe ce qui explique la modfication 
-des fichiers est l'étape qui prend le plus de temps et sur laquelle je suis toujours.
-Après cette longue et dfficile partie fini nous pourrons passer à la documentation du code afin
-d'expliquer les modification apporter et pourquoi elle ont été faitent.
-Après avoir commenter l'ensemeble de ces fichier je pourrais finelement intégrer mon projet au
-grand projet open source MISP et à ce moment là je pourrais considérer que le projet est fini
-et surtout réussi. 
+Pour débuter correctement mon stage, j'ai tout d'abord tenu à me documenter un maximum sur mon sujet, sur le projet MISP, sur Vagrant, sur VirtualBox et sur tout ce qui est lié de près ou de loin à
+tout ce que je viens de vous énumérer. Consacrer un moment pour comprendre l'utilisation de ces logiciels, pourquoi devrais-je les utiliser, comment et dans quel but a été, à mon sens, la bonne chose
+à faire, car dans le cas contraire, je trouve que le travail aurait été en quelque sorte bâclé. Le travail aurait très bien pu continuer, mais sans connaissance solide et avec, je pense,
+moins d'efficacité, alors que le projet est déjà assez complexe.
 
-En somme je ne peut pas donner la description d'une methode travail suivis, j'ai simplement essayer
-de le faire au mieux en commnçeant par comprendre ce les outils que j'utilise et comment je les 
-utilise pour que lorsque je les utilise je ne soit pas perdu, après cela je suis passez à la 
-manipulation que je suis encore encore de pratiquer et finirais par documenter mon code.
+J'ai par ailleurs utilisé d'autres choses suite aux conseils avisés de mon tuteur, tels que HedgeDoc qui me permet de mettre en page chaque jour les tâches accomplies, en donnant la possibilité par
+la même occasion à mes collègues de voir mon avancée et d'apporter des modifications à ce que j'ai fait. Mais ce n'est en revanche pas le seul outil de collaboration utilisé. On m'a proposé d'utiliser
+Element afin d'échanger avec chacune des personnes présentes ou avec elles toutes en même temps, afin d'avoir des réponses rapides.
+
+Après cette phase de documentation, nous devons maintenant commencer à essayer quelques manipulations. Conformément aux propos précédents, j'ai commencé à utiliser VirtualBox à l'aide de Vagrant, puis
+j'ai continué par la modification des fichiers présents dans MISP-Vagrant. Nous entrons maintenant dans le vif du sujet. Comme je vous l'ai expliqué au préalable, MISP est une plateforme de partage de
+connaissances au sujet des attaques et menaces informatiques, MISP-Vagrant lui va fournir une configuration pré-définie au déploiement de MISP et contribue à cette communauté en signalant des bugs tout
+en proposant des améliorations.
+
+Les fichiers présents dans MISP-Vagrant sont assez anciens, et avec toutes les avancées que l'on a faites, les nouvelles versions de tous les outils utilisés, les fichiers que l'on a actuellement en
+notre possession présentent un certain nombre d'erreurs. Ma mission au cours de ces deux mois de stage sera de faire les modifications nécessaires afin qu'il n'y ait plus d'erreurs, cela implique le
+changement, par exemple, des versions des outils installés. Si cela consistait simplement à changer les versions installées de différents outils, cela irait assez vite, mais nous devons prendre en
+compte que la mise à jour de ces fichiers peut impacter d'autres fichiers qui y sont liés, et là est la complexité de ce projet. Il faut faire en sorte que tout concorde parfaitement.
+
+Revenons aux compétences que je dois acquérir ou développer. Nous avons stipulé l'utilisation du bash et Unix scripting, mais je n'en ai pourtant toujours pas parlé depuis la description de ce que j'ai
+pu faire depuis le début. Pourtant, c'est l'une des compétences que je suis amenée actuellement à utiliser le plus. Les fichiers présents dans le dossier MISP-Vagrant que je dois principalement modifier
+sont exclusivement programmés en bash, et n'étant pas une experte dans ce langage de programmation, je me suis bien documentée et ai un peu lu quelques livres afin de consolider des connaissances.
+Nous le savons, avoir des connaissances est très utile, mais savoir les utiliser correctement est mieux.
+
+C'est donc après cela que les nombreux tests ont réellement commencé (même si bien évidemment des tests ont été préalablement faits afin de commencer à manipuler). J'ai tout d'abord commencé par
+localiser les erreurs afin d'essayer de les neutraliser une à une. J'ai très vite compris qu'essayer d'éliminer les erreurs une à une sans prendre en compte le reste du code était une mauvaise idée,
+car tout est lié, ce qui engendre que la simple modification d'une partie de code ne prenant pas en compte le reste du code engendre encore de nouvelles erreurs. Le travail est donc très minutieux et
+complexe, ce qui explique que la modification des fichiers est l'étape qui prend le plus de temps et sur laquelle je travaille encore.
+
+Après cette longue et difficile partie, nous pourrons passer à la documentation du code afin d'expliquer les modifications apportées et pourquoi elles ont été faites. Après avoir commenté l'ensemble de
+ces fichiers, je pourrai enfin intégrer mon projet au grand projet open source MISP, et à ce moment-là, je  pourrais considérer que le projet est fini et surtout réussi.
+ 
+En somme, je ne peux pas donner la description d'une méthode de travail suivie. J'ai simplement essayé de le faire au mieux en commençant par comprendre les outils que j'utilise et comment je les
+utilise, pour que lorsque je les utilise, je ne sois pas perdu. Après cela, je suis passé à la manipulation que je suis encore en train de pratiquer et finirai par documenter mon code.
 
