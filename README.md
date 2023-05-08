@@ -34,55 +34,42 @@ sujet, continuer par vous exposer tout ce que j'ai pu apprendre, utiliser ou per
 
 ### Qui est CIRCL ?
  
-https://www.scribbr.fr/wp-content/uploads//2019/07/Exemple-plan-de-rapport-de-stage.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C289%2C0%5D ## A propos de mon entreprise
- 
-L'entreprise Computer Incident Response Center autrement appeler CIRCL est une initiative
-gouvernementale engagé en 2012 par le gouvernement luxembourgeois dans le but de proposer un 
-service de réponse pour les entité non gouvernemental, les entreprises privées et les collectivité
-au sujet des menaces de sécurité informatique et de minimiser au maximum les pertes pouvant etre
-engendrer suite à ces attaques.
-Cette organisation géré par SMILE (Sécurity Made in Lëtzebuerg) etant une initiative publique et
-privée visant à la promotion de la sécurité au sein du pays tout en stimulant le développement
-de l'industrie pour laquel cette meme entreprise fait la promotion à savoir encore une fois, la
-sécurité informatiques.
-A voir penser à la mise en place CIRCL il y a une dizaine d'année est un
-réel coup de génie au vue des progès considérable fait en informatique car depuis sa création 
-cette dernière ne fait que croitre et ce continuelement ce qui l'ammène à etre un acteur majeur 
-dans le domaine et d'oeuvrer au niveau national et international.
-Pour mener à bien toutes ces action l'entreprise se compose de plusieurs spéacialiste 
-en sécurité informatique qui seront en capacitéde fournir de manière rapide, efficace et précises 
-des réponses au différents incidents qui sont succeptible d'etre rencontré par les personnes en
-détresse qui font appels à ces services. Par conséquent elle a pour but  d'apporter de réél 
-solutions et joue le role de "protectrice" au niveau informatique au Luxembourg.
-Nous pourrions penser qu'une tel entreprise serait nécesssiarement payante au vu de 
-l'aide qu'elle apporte et du fait que nous sommes très precisement en plein dans l'air ou
-l'informatique occcupe une place préponderante dans nos vie ,que cela soit liée au travail, aux
-loisirs ou encore à nos objets personnelles ( objes connectés: smartwatch, smartTV, smartFridge...)
-ce qui accroit de facons considérable le fait que n'importe qui puisse nuire à vos donnée à 
-caractère personnel, mais détromper vous Depuis 2014 CIRCL est une entreprises à but non lucratif,
-et pour cause cela à pour motivation la promotion de la sécuité informatique au Luxembourg.
-Ormis que cette société viennent en aide à qui le demande en cas de cyberattaques, elle s'est
-occupée de mettre en place certain projets et de les maintenir sur le logn termes, en voicis trois
-exemeples:
-- CIRCLean : Outils ayant été développer dans le but de nettoyer les fichiers malveillant et ce
-automatiquement et est ainsi utilisé par d'autres entreprise.
-- Cyber Threat Intelligence : Ceci consiste à la collecte d'information sur les attaques et
-menaces informatiques et ce à travers le monde dans le but d'en informer le plus de personnes
-possible en les publiant sur des plateforme de partage d'information tel que MISP, ce qui nous
-amène au troisième exemple.
-- MISP : Autrement appeler Malware Information Sharing Plateform, MISP est une plateforme de
-partage d'informaion dans laquel les différentes organisation partage ds information au suejet des
-attaques et de manaces dans le but de mieux les appréhender et de mettre de nouvelles chose en
-place afin de mieux les contrer.
+https://www.scribbr.fr/wp-content/uploads//2019/07/Exemple-plan-de-rapport-de-stage.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C289%2C0%5D 
 
-Comme vous l'aurez compris cette entreprise s'est fait une réel place dans le monde de la
-cybersécurité graces a ses services qualitatifs, ses projets de grande envergures, son étroite 
-collaboration avec un bon nombre d'entreprise qu'elle soient privée ou publiques, son organisation
-et sa manière de travailler, tout ceci appuyer par le fait que ce ne soit pas une société à but 
-lucratif mais qui apporte des solution rapides et clair.
-Maintenant que vous vous etes familiariser avec cette organsitaion en en apprenant d'avantage sur 
-ses spécificité, sa création, sa structure social et ses projets nous pouvons passez à la
-présentation et explication de mon sujet.
+## A propos de mon entreprise
+ 
+L'entreprise Computer Incident Response Center, également appelée CIRCL, est une initiative gouvernementale lancée en 2012 par le gouvernement luxembourgeois dans le but de proposer un service de
+réponse aux menaces de sécurité informatique pour les entités non gouvernementales, les entreprises privées et les collectivités, afin de minimiser les pertes potentielles liées à ces attaques.
+Cette organisation est gérée par SMILE (Security Made in Lëtzebuerg), une initiative publique et privée visant à promouvoir la sécurité informatique dans le pays tout en stimulant le développement
+de l'industrie pour laquelle cette même entreprise fait la promotion, à savoir encore une fois la sécurité informatique.
+
+La mise en place de CIRCL il y a une dizaine d'années était un réel coup de génie compte tenu des progrès considérables réalisés en informatique, car depuis sa création, cette dernière ne fait que
+croître et continue d'être un acteur majeur dans le domaine et de travailler au niveau national et international. Pour mener à bien toutes ces actions, l'entreprise est composée de plusieurs
+spécialistes en sécurité informatique qui sont en mesure de fournir rapidement, efficacement et précisément des réponses aux différents incidents susceptibles d'être rencontrés par les personnes
+en détresse qui font appel à ces services. Par conséquent, elle vise à apporter des solutions réelles et joue le rôle de "protectrice" en matière informatique au Luxembourg.
+
+Nous pourrions penser qu'une telle entreprise serait nécessairement payante compte tenu de l'aide qu'elle apporte et du fait que nous sommes actuellement dans une ère où l'informatique occupe une place
+prépondérante dans nos vies, que ce soit dans le cadre du travail, des loisirs ou même de nos objets personnels (objets connectés : smartwatch, smartTV, smartFridge...), ce qui accroît considérablement
+le risque que n'importe qui puisse nuire à nos données à caractère personnel. Mais détrompez-vous : depuis 2014, CIRCL est une entreprise à but non lucratif, motivée par la promotion de la sécurité
+informatique au Luxembourg.
+
+Outre le fait que cette société vienne en aide à ceux qui le demandent en cas de cyberattaques, elle s'occupe également de la mise en place de certains projets et de leur maintien à long terme.
+En voici trois exemples :
+- CIRCLean : Cet outil a été développé dans le but de nettoyer automatiquement les fichiers malveillants, et il est utilisé par d'autres entreprises.
+
+- Cyber Threat Intelligence : Il s'agit de la collecte d'informations sur les attaques et menaces informatiques à travers le monde, dans le but de les partager avec le plus grand nombre possible de
+personnes en les publiant sur des plateformes de partage d'informations telles que MISP, ce qui nous amène au troisième exemple.
+
+- MISP : Également appelée Malware Information Sharing Platform, MISP est une plateforme de partage d'informations dans laquelle les différentes organisations partagent des informations sur les attaques
+et les menaces dans le but de mieux les comprendre et de mettre en place de nouvelles mesures pour mieux les contrer.
+
+
+Comme vous l'aurez compris, cette entreprise s'est fait une réelle place dans le monde de la cybersécurité grâce à ses services qualitatifs, ses projets de grande envergure, son étroite collaboration
+avec un bon nombre d'entreprises qu'elles soient privées ou publiques, son organisation et sa manière de travailler, le tout appuyé par le fait que ce ne soit pas une société à but lucratif mais qui
+apporte des solutions rapides et claires.
+
+Maintenant que vous vous êtes familiarisé avec cette organisation en apprenant davantage sur ses spécificités, sa création, sa structure sociale et ses projets, nous pouvons passer à la présentation
+et à l'explication de mon sujet.
 
 
 ## Mon sujet : explication, avancé et but
