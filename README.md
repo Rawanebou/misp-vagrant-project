@@ -10,9 +10,17 @@ CIRCL est une entreprise spécialisée dans la sécurité informatique et est un
 en tant qu'acteur majeur de la sécurité informatique au Luxembourg. Elle n'est pas simplement reconnue au niveau national mais bien au-delà grâce à ses projets, son dévouement et son efficacité. 
 Ayant pour tuteur Alexandre Dulaunoy, j'ai pu bénéficier des meilleures explications et de l'accompagnement possible pour le bon déroulement de ce début de stage.
 
-L'objectif à l'issue de mon stage serait de mener à bien mon sujet de stage que j'ai choisi. Ce sujet a pour but d'améliorer la virtualisation et l'orchestration de l'infrastructure de formation
-et cela consisterait globalement à la mise à jour de plusieurs fichiers datant maintenant de plusieurs années. Tout en prenant en compte que la modification de ces fichiers peut engendrer d'autres
- erreurs ailleurs, c'est donc un travail pointilleux et assez complexe à réaliser.
+Cela fait un mois que nous avons commencé notre stage obligatoire de deux mois en entreprise, dans le cadre de notre deuxième année de formation de Bachelor Universitaire de Technologie.
+Cette expérience est, à mon sens, essentielle lors de notre cursus scolaire, car elle nous permet d'expérimenter le monde du travail dans le domaine que nous avons choisi d'étudier.
+En tant que promotion ayant suivi au lycée la filière générale ou technologique, nous n'avons pas eu, contrairement à la filière professionnelle, l'occasion d'avoir une expérience professionnelle
+en lien direct avec nos études. Cette expérience est donc extrêmement importante et enrichissante pour nous, car elle est notre première véritable expérience, d'autant plus intéressante avec l'ajout
+d'un sujet que nous devons accomplir au cours de cette période.L'objectif à l'issue de mon stage serait de mener à bien mon sujet de stage que j'ai choisi. Ce sujet a pour but d'améliorer
+la virtualisation et l'orchestration de l'infrastructure de formation et cela consisterait globalement à la mise à jour de plusieurs fichiers datant maintenant de plusieurs années. Tout en prenant
+en compte que la modification de ces fichiers peut engendrer d'autres erreurs ailleurs, c'est donc un travail pointilleux et assez complexe à réaliser.
+Ce sujet est bien sûr délivré par l'organisme d'accueil, afin que ces derniers puissent nous aider dans le cas où nous rencontrerions des problèmes, car dans la plupart des cas, l'entreprise dans
+laquelle l'étudiant décide de faire son stage possède soit un service informatique, soit au moins une personne ayant des connaissances en informatique. Du fait que ce sujet soit délivré par l'organisme
+nous accueillant, il y aura des outils que nous n'avons pas spécialement utilisés lors de nos cours, mais dont nous aurons besoin. C'est pourquoi l'attribution du sujet par l'entreprise est essentielle
+au bon déroulement de cette expérience. 
 
 Néanmoins, le choix de ce stage et plus précisément de ce sujet de stage est une réelle opportunité pour moi, ayant pour réelle ambition de m'orienter dans un domaine qui m'intéresse énormément  qui
 n'est autre que la cybersécurité. Travailler avec des personnes qui pratiquent un métier dans cette spécialité de l'informatique est réellement enthousiasmant et faire un projet directement lié à mon
@@ -20,37 +28,6 @@ choix d'étude future l'est encore plus.
 
 Afin de vous expliquer au mieux ce début de stage dans une entreprise informatique, je vais tout d'abord commencer par vous présenter mon entreprise. Je vais ensuite continuer par vous présenter mon
 sujet, continuer par vous exposer tout ce que j'ai pu apprendre, utiliser ou perfectionner en ce début de stage, et je finirai enfin par une conclusion reprenant un peu tout ce que j'ai dit.
-
-
-
-
-
-
-
-Cela va faire un mois que nous avons commmencer notre stage de deux mois obligatoire en entreprise
-dans le cadre de notre deuxième année de formartion de bachelor universitaire de technologie.
-Cette experience est à mon sens essentiel lors de notre cursus scolaire car cela nous permet 
-d'experimenter le monde du travail et ce dans le domaine dans lequel nous avons décider
-d'entreprendre nos études.
-Etant une promotion ayant suivis au lycée la filière général ou technologique nous n'avons
-contrairement à la filière professionnel pas eu l'occasion d'avoir une experience proffesionnel
-qui est en lien direct avce nos etudes.
-Cet experiences est donc extrement importante et enrichissante pour nous car c'est notre première 
-réel experience et elle est d'autant plus intéressante avce l'ajout d'un sujet que nous devons 
-accomplir au cours de cette periode. Ce sujet est biensur délivrée par l'organisme d'acceuil 
-afin que ces derniers puissent nous aider dans le cas ou nous rencontreriosn des problèmes, 
-car dans la majeur partie des cas l'entreprise dans laquelle l'étudiant décide de faire son stage 
-possède soit un service informatique soit au moins une personne ayant des connaissance en
-informatique.Du fait que ce sujet soit délivre par l'oganisme nous acceuillant il y aura des outils
-que nous n'avons pas spécialement utilisée lors de nos cours mais dont nous allons avoir besoin,
-c'est pourquoi l'attribution du sujet par l'entreprise est essentiel au bon déroulement de cette
-experience. Nous comprenons déja lors de nos premier jour de "travail" que les cours de pratiques 
-que nous avons suivis vont nous etre d'une très grande aide car cela nous permet d'avoir en quelques
-sorte un point de repère au quel nous pouvons nous rattacher pour ne pas etres complètement perdu.
-Afin de vous expliquer au mieux ce début de stage dans une entreprise informatique, je vais tout
-d'abord commencer par vous présenter mon entreprise je vais ensuite continuer par vous présnter mon
-sujet continuer par vous exposer tout ce que j'ai pu apprendre, utiliser ou perfectionner en ce
-debut de stage et je finirais enfin par une conclusion reprenons un peut tout ce que j'ai dis.
 
 
 ## ENTREPRISE 
