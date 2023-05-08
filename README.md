@@ -34,10 +34,6 @@ sujet, continuer par vous exposer tout ce que j'ai pu apprendre, utiliser ou per
 
 ### Qui est CIRCL ?
  
-https://www.scribbr.fr/wp-content/uploads//2019/07/Exemple-plan-de-rapport-de-stage.pdf#%5B%7B%22num%22%3A53%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C69%2C289%2C0%5D 
-
-## A propos de mon entreprise
- 
 L'entreprise Computer Incident Response Center, également appelée CIRCL, est une initiative gouvernementale lancée en 2012 par le gouvernement luxembourgeois dans le but de proposer un service de
 réponse aux menaces de sécurité informatique pour les entités non gouvernementales, les entreprises privées et les collectivités, afin de minimiser les pertes potentielles liées à ces attaques.
 Cette organisation est gérée par SMILE (Security Made in Lëtzebuerg), une initiative publique et privée visant à promouvoir la sécurité informatique dans le pays tout en stimulant le développement
@@ -74,7 +70,7 @@ et à l'explication de mon sujet.
 
 ## Sujet de stage 
 
-### Intitulé du suejt de stage 
+### Intitulé du sujet de stage 
 
 Afin de mener à bien l'explication détaillée de mon projet, je vais tout d'abord vous présenter l'intitulé de mon stage ainsi que ce qui m'a été initialement demandé lors de la préparation de celui-ci.
 Je vais ensuite poursuivre en vous présentant les outils qui m'ont été mis à disposition ainsi que les logiciels que l'on m'a demandé d'utiliser afin de mener à terme mon projet.
@@ -93,7 +89,7 @@ Ayant eu la chance de manipuler Git lors de mes heures d'enseignement et d'avoir
 compétences sur lesquelles m'appuyer, même si mes compétences en Bash sont encore très limitées.
 
 
-### Outils et logiciel mis a disposition
+### Outils et logiciel mis à disposition
 
 Bien évidemment, au vu de l'intitulé de mon stage, je ne serai pas amené à utiliser des switchs ou des routeurs ou ce genre de chose que l'on a pu pratiquer de nombreuses fois en travaux pratiques de
 réseaux avancés, par exemple, mais à manipuler exclusivement grâce à un ordinateur comme en cours de virtualisation, par exemple. De ce fait, un ordinateur portable sur lequel je travaille sous
@@ -101,7 +97,7 @@ Ubuntu 22.04 est le seul outil matériel qui m'a été fourni. En termes de logi
 Du fait qu'il n'y a pas beaucoup de nouveaux outils matériels et/ou logiciels, instinctivement, une personne peut penser que l'apprentissage de l'utilisation de ces équipements n'est pas si compliqué,
 mais c'est uniquement lorsque l'on entre dans le vif du sujet que nous mesurons la difficulté, chose que nous allons analyser directement au point suivant.
 
-### Qu'est-ce que j'ai appris / qu'est ce que j'ai fait / qu'est ce que j'ai utiliser ?
+### Qu'est-ce que j'ai appris / qu'est-ce que j'ai fait / qu'est-ce que j'ai utilisé ?
 
 Pour débuter correctement mon stage, j'ai tout d'abord tenu à me documenter un maximum sur mon sujet, sur le projet MISP, sur Vagrant, sur VirtualBox et sur tout ce qui est lié de près ou de loin à
 tout ce que je viens de vous énumérer. Consacrer un moment pour comprendre l'utilisation de ces logiciels, pourquoi devrais-je les utiliser, comment et dans quel but a été, à mon sens, la bonne chose
