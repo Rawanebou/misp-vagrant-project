@@ -103,7 +103,7 @@ Once this difficult part is completed, we can move on to documenting the code to
 
 In summary, I cannot say that the organization I have chosen for the smooth running of my internship is the best, but I can say that it is the most suitable for my case and will hopefully allow me to successfully complete my project under good conditions.
 
-![Gantt chart created on HedgeDoc](///home/rawane/Pictures/Screenshots/Screenshot%20from%202023-05-10%2014-51-36.png)
+![Gantt chart created on HedgeDoc](/home/rawane/Pictures/Screenshots/Screenshot%20from%202023-05-10%2014-51-36.png)
 
 # CONCLUSION
 
