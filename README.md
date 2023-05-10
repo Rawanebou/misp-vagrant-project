@@ -113,7 +113,7 @@ En somme, je ne peux pas dire que l'organisation que j'ai choisie pour le bon d�
 
 
 
-# CONCLUSION
+# conclusion
 
 Mon ressenti après ce premier mois de stage est très positif et ce pour plusieurs raisons. Tout d'abord, cela m'a permis de découvrir le monde du travail dans le domaine dans lequel je fais mes études. Ayant déjà travaillé par le passé comme étudiant, j'ai ressenti une réelle différence entre ces deux mondes. Le fait de travailler dans un domaine dans lequel nous avons accumulé un certain nombre de connaissances que l'on peut ainsi utiliser à bon escient est extrêmement gratifiant et encourageant. Le fait d'apprendre de nouveaux logiciels et de participer à l'élaboration de projets "réels" dans le sens où l'entreprise qui m'accueille souhaite un résultat est un défi qui me pousse à me surpasser, même si cela peut être compliqué. Enfin, tout cela est appuyé par le fait que j'ai eu la chance de me retrouver au milieu d'une équipe très agréable, avec des collègues qui n'hésitent pas, de temps en temps, à venir voir ce que je fais et à me proposer leur aide si besoin. De plus, une partie de ces personnes ne parle pas français mais exclusivement anglais, ce qui pousse donc, par moment, à améliorer mon anglais tout en ayant de l'aide à la réalisation de mon travail. C'est pourquoi je peux conclure que ce premier mois de stage en entreprise se passe très bien pour ma part.
 
