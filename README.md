@@ -129,7 +129,7 @@ En ce qui concerne mon avancée, je dirais personnellement que je suis à la moi
 Une fois cette partie difficile terminée, nous pourrons passer à la documentation du code afin d'expliquer les modifications apportées et pourquoi elles ont été faites. Une fois que j'aurai commenté l'ensemble de ces fichiers, je pourrai enfin intégrer mon projet au grand projet open source MISP. À ce moment-là, je considérerai que le projet est fini et surtout réussi.
 En somme, je ne peux pas dire que l'organisation que j'ai choisie pour le bon déroulement de mon stage est la meilleure, mais je peux dire qu'elle est la plus adaptée à mon cas et qu'elle me permettra, je l'espère, de réussir mon projet dans de bonnes conditions.
 
-![Diagramme de Gantt fait sur HedgeDoc](///home/rawane/Pictures/Screenshots/Screenshot%20from%202023-05-10%2014-51-36.png)
+![Diagramme de Gantt fait sur HedgeDoc](Gantt.png)
 
 
 
