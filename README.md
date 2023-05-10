@@ -4,7 +4,7 @@
 
 
 # Introduction
-Du 17 avril au 9 juin 2023 (8 semaines), j'ai pour objectif d'effectuer mon stage au sein de l'entreprise CIRCL, située au 122 Rue Adolphe Fischer, 1521 Gare Luxembourg. Pendant ce stage dans le domaine de l'informatique, plus précisément dans celui orienté réseau, j'ai été impliqué dans un grand projet d'envergure internationale qui est MISP.
+Du 17 avril au 9 juin 2023 (8 semaines), j'ai pour objectif d'effectuer mon stage au sein de l'entreprise CIRCL, située au 122 Rue Adolphe Fischer, 1521 Gare Luxembourg. Pendant ce stage dans le domaine de l'informatique, plus précisément dans celui orienté résau, j'ai été impliqué dans un grand projet d'envergure internationale qui est MISP.
 CIRCL est une entreprise spécialisée dans la sécurité informatique et est une organisation récemment créée en 2012, qui a su faire les bons choix pour se faire un nom et une place en tant qu'acteur majeur de la sécurité informatique au Luxembourg. Elle n'est pas simplement reconnue au niveau national mais aussi internationalement grâce à ses projets, son engagement et son efficacité. 
 Avec Alexandre Dulaunoy en tant que tuteur, j'ai bénéficié des meilleures explications et de l'accompagnement nécessaire pour le bon déroulement de ce début de stage.
 
@@ -42,17 +42,25 @@ compétences sur lesquelles m'appuyer, même si mes compétences en Bash sont en
 ## Outils et logiciel mis à disposition
 
 Bien évidemment, au vu de mon sujet de stage, je ne serai pas amené à utiliser des switchs ou des routeurs ou ce genre de choses que l'on a pu pratiquer de nombreuses fois en travaux pratiques de réseaux avancés, par exemple, mais à manipuler exclusivement grâce à un ordinateur comme en cours de virtualisation, par exemple. De ce fait, un ordinateur portable sur lequel je travaille sous Ubuntu 22.04 est le seul outil matériel qui m'a été fourni. En termes de logiciel, j'ai été amené à utiliser principalement Vagrant et VirtualBox.
+J'ai par ailleurs utilisé d'autres outils suite aux conseils avisés de mon tuteur, tels que HedgeDoc qui me permet de mettre en page chaque jour les tâches accomplies, en donnant la possibilité par la même occasion à mes collègues de voir mon avancée et d'apporter des modifications à ce que j'ai fait. Mais ce n'est en revanche pas le seul outil de collaboration utilisé. On m'a proposé d'utiliser Element afin d'échanger avec chacune des personnes présentes ou avec elles toutes en même temps, afin d'avoir des réponses rapides.
+L'ensemble de ces outils va me permettre de modifier le dossier misp-vagrant qui regroupe l'ensemble des fichiers sur lesquels je dois travailler lors de mon projet.
+
+
+Par conséquent, voici l'ensemble des outils que j'ai dû apprendre à utiliser :
 
 - Vagrant: Vagrant est un outil open source qui a pour but de gérer la création et la configuration de machines virtuelles. Ainsi, il rend possible la configuration, la création et la gestion d'environnements de développement virtuels qui permettent d'exécuter des tâches de développement et de test, de tester des applications et aussi pour toute autre manipulation requérant l'emploi de développement stable et reproductible. C'est un outil nous permettant de créer des machines virtuelles à partir de modèles qui sont préconfigurés et que l'on appelle des box. En bref, il permet aux utilisateurs la création simple et rapide d'un environnement de développement reproductible qui permettrait de réduire par conséquent les erreurs de configuration tout en facilitant le travail collaboratif.
 
 - VirtualBox: Ce logiciel open source de virtualisation de système d'exploitation permet à notre ordinateur de créer et gérer des machines virtuelles, offrant ainsi la possibilité d'exécuter et de tester plusieurs systèmes d'exploitation sur une seule et unique machine physique. L'utilisateur peut donc installer différents systèmes d'exploitation tels que Linux, macOS ou encore Windows. Chacune de ces machines virtuelles possède ses propres ressources et configurations, et aucune d'entre elles n'a accès aux fichiers pouvant être présents sur la machine hôte, ce qui signifie que les tests se font de manière complètement isolée.
 
-
-J'ai par ailleurs utilisé d'autres outils suite aux conseils avisés de mon tuteur, tels que HedgeDoc qui me permet de mettre en page chaque jour les tâches accomplies, en donnant la possibilité par la même occasion à mes collègues de voir mon avancée et d'apporter des modifications à ce que j'ai fait. Mais ce n'est en revanche pas le seul outil de collaboration utilisé. On m'a proposé d'utiliser Element afin d'échanger avec chacune des personnes présentes ou avec elles toutes en même temps, afin d'avoir des réponses rapides.
-
 - HedgeDoc : Cette application de prise de notes et de collaboration est un projet open source accessible via un navigateur web. Elle permet de faire de multiples choses, telles que la prise de notes seule ou en collaboration simultanée, étant un outil collaboratif. Elle permet également, lors de la prise de notes, la création de tableaux, de listes, de diagrammes de Gantt, d'ajouter des commentaires et bien d'autres fonctionnalités. C'est donc un outil de collaboration en ligne facile à utiliser et offrant de multiples fonctionnalités.
 
 - Element : Element est un outil de communication instantanée permettant à ses utilisateurs de communiquer par appel vidéo, audio et par messagerie, que ce soit individuellement ou en groupe. Il est disponible sur plusieurs systèmes d'exploitation et offre des fonctionnalités avancées en termes de sécurité et de confidentialité.
+
+- misp-vagrant : Misp-vagrant est un environnement de développement virtuel qui a été spécialement pré-configuré pour le système de prévention des incidents de sécurité informatique qu'est MISP. Ainsi, il permet la création et l'installation locale de MISP pour le tester, bien sûr, en utilisant une machine virtuelle basée sur Vagrant, afin que cela n'affecte en rien la machine hôte.
+
+- Langage de programmation Markdown pour rédiger mon rapport intermédiaire de stage.
+
+J'ai bien sûr utilisé d'autres outils que je connaissais, tels que Git ou encore le langage de programmation Bash, dans lesquels j'ai quelques difficultés.
 
 Du fait qu'il n'y a pas beaucoup de nouveaux outils matériels et/ou logiciels, instinctivement, une personne peut penser que l'apprentissage de l'utilisation de ces équipements n'est pas si compliqué, mais c'est uniquement lorsque l'on entre dans le vif du sujet que nous mesurons la difficulté, chose que nous allons analyser directement au point suivant.
 
@@ -121,18 +129,13 @@ En ce qui concerne mon avancée, je dirais personnellement que je suis à la moi
 Une fois cette partie difficile terminée, nous pourrons passer à la documentation du code afin d'expliquer les modifications apportées et pourquoi elles ont été faites. Une fois que j'aurai commenté l'ensemble de ces fichiers, je pourrai enfin intégrer mon projet au grand projet open source MISP. À ce moment-là, je considérerai que le projet est fini et surtout réussi.
 En somme, je ne peux pas dire que l'organisation que j'ai choisie pour le bon déroulement de mon stage est la meilleure, mais je peux dire qu'elle est la plus adaptée à mon cas et qu'elle me permettra, je l'espère, de réussir mon projet dans de bonnes conditions.
 
+![Diagramme de Gantt fait sur HedgeDoc](///home/rawane/Pictures/Screenshots/Screenshot%20from%202023-05-10%2014-51-36.png)
+
 
 
 # conclusion
 
 Mon ressenti après ce premier mois de stage est très positif et ce pour plusieurs raisons. Tout d'abord, cela m'a permis de découvrir le monde du travail dans le domaine dans lequel je fais mes études. Ayant déjà travaillé par le passé comme étudiant, j'ai ressenti une réelle différence entre ces deux mondes. Le fait de travailler dans un domaine dans lequel nous avons accumulé un certain nombre de connaissances que l'on peut ainsi utiliser à bon escient est extrêmement gratifiant et encourageant. Le fait d'apprendre de nouveaux logiciels et de participer à l'élaboration de projets "réels" dans le sens où l'entreprise qui m'accueille souhaite un résultat est un défi qui me pousse à me surpasser, même si cela peut être compliqué. Enfin, tout cela est appuyé par le fait que j'ai eu la chance de me retrouver au milieu d'une équipe très agréable, avec des collègues qui n'hésitent pas, de temps en temps, à venir voir ce que je fais et à me proposer leur aide si besoin. De plus, une partie de ces personnes ne parle pas français mais exclusivement anglais, ce qui pousse donc, par moment, à améliorer mon anglais tout en ayant de l'aide à la réalisation de mon travail. C'est pourquoi je peux conclure que ce premier mois de stage en entreprise se passe très bien pour ma part.
-
-
-
-
-
-
-
 
 
 

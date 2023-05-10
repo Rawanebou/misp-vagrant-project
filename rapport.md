@@ -19,7 +19,7 @@ To explain this beginning of my internship in a computer company better, I will 
 
 
 
-# Internship subject
+# TOPIC
 
 In order to properly explain my project in detail, I will first present to you the title of my internship and what was initially requested of me during its preparation.
 Next, I will continue by presenting the tools that were made available to me, as well as the software that I was asked to use in order to complete my project.
@@ -39,16 +39,24 @@ Having had the opportunity to manipulate Git during my teaching hours and having
 ## Tools and software provided
 
 Of course, given the subject of my internship, I won't be using switches or routers or anything like that which we have practiced many times in advanced network labs, for example, but will be exclusively manipulating things through a computer like in virtualization classes, for example. Therefore, the only hardware tool provided to me is a laptop on which I work under Ubuntu 22.04. In terms of software, I have mainly been using Vagrant, VirtualBox, and Virtualbox.
+Furthermore, I have used other tools following the wise advice of my supervisor, such as HedgeDoc which allows me to format and document daily tasks, while also giving my colleagues the opportunity to see my progress and make modifications to what I have done. However, this is not the only collaboration tool used. I have been suggested to use Element to communicate with each person or all of them at once, to get quick responses.
+All of these tools will allow me to modify the misp-vagrant folder, which contains all the files I need to work on for my project.
+
+Therefore, here is the set of tools that I had to learn to use:
 
 - Vagrant is an open-source tool designed to manage the creation and configuration of virtual machines. It enables the configuration, creation, and management of virtual development environments that enable the execution of development and testing tasks, testing of applications, and any other manipulations that require the use of stable and reproducible development. It's a tool that allows us to create virtual machines from preconfigured models called "boxes". In short, it allows users to easily and quickly create a reproducible development environment, which would reduce configuration errors and facilitate collaborative work.
 
 - VirtualBox: This open source operating system virtualization software allows our computer to create and manage virtual machines, offering the possibility of running and testing multiple operating systems on a single physical machine. Therefore, users can install different operating systems such as Linux, macOS or Windows. Each of these virtual machines has its own resources and configurations, and none of them has access to files that may be present on the host machine, which means that tests are completely isolated.
 
-Furthermore, I have used other tools following the wise advice of my supervisor, such as HedgeDoc which allows me to format and document daily tasks, while also giving my colleagues the opportunity to see my progress and make modifications to what I have done. However, this is not the only collaboration tool used. I have been suggested to use Element to communicate with each person or all of them at once, to get quick responses.
-
 - HedgeDoc: This note-taking and collaboration application is an open-source project accessible via a web browser. It allows users to do multiple things, such as taking notes alone or collaboratively in real-time, as it is a collaborative tool. Additionally, it allows for the creation of tables, lists, Gantt charts, adding comments, and many other features while taking notes. Therefore, it is an easy-to-use online collaboration tool that offers multiple functionalities.
 
 - Element: Element is an instant communication tool that allows its users to communicate through video and audio calls, as well as messaging, either individually or in groups. It is available on multiple operating systems and offers advanced features in terms of security and privacy.
+
+- misp-vagrant: Misp-vagrant is a virtual development environment that has been specially pre-configured for the MISP cybersecurity incident prevention system. It allows for the creation and local installation of MISP for testing, of course, using a Vagrant-based virtual machine, so that it does not affect the host machine in any way.
+
+- Markdown programming language to write my internship progress report.
+
+Of course, I have also used other tools that I was familiar with, such as Git or the Bash programming language, in which I have some difficulties.
 
 Due to the fact that there aren't many new hardware and/or software tools, one might instinctively think that learning to use these devices is not so complicated, but it is only when we get into the thick of things that we realize the difficulty, which we will analyze directly in the next section.
 
@@ -95,7 +103,7 @@ Once this difficult part is completed, we can move on to documenting the code to
 
 In summary, I cannot say that the organization I have chosen for the smooth running of my internship is the best, but I can say that it is the most suitable for my case and will hopefully allow me to successfully complete my project under good conditions.
 
-
+![Gantt chart created on HedgeDoc](///home/rawane/Pictures/Screenshots/Screenshot%20from%202023-05-10%2014-51-36.png)
 
 # CONCLUSION
 
