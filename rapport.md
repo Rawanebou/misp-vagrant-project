@@ -1,5 +1,18 @@
 
 
+---
+title: "Rapport intermédiaire"
+author: [Boubrima Rawane, BUT2]
+date: "2023-05-10"
+...
+
+---
+title: Rapport intermédiaire
+author: BOUBRIMA Rawane 
+date: 10 mai 2023
+---
+
+
 # Introduction
 From April 17 to June 9, 2023 (8 weeks), my objective is to carry out my internship within the company CIRCL, located at 122 Rue Adolphe Fischer, 1521 Gare Luxembourg. During this internship in the field of computer science, specifically in the network-oriented area, I have been involved in a large-scale international project called MISP.
 
@@ -19,11 +32,13 @@ To explain this beginning of my internship in a computer company better, I will 
 
 
 
+
 # TOPIC
 
 In order to properly explain my project in detail, I will first present to you the title of my internship and what was initially requested of me during its preparation.
 Next, I will continue by presenting the tools that were made available to me, as well as the software that I was asked to use in order to complete my project.
 Finally, I will conclude by presenting what I was able to accomplish during this first month and what still needs to be done.
+
 
 
 
@@ -34,6 +49,8 @@ The title of the internship subject is as follows: "MSc Student Internship Posit
 To succeed in this work, I have a number of tasks and skills to acquire. Firstly, I must be able to master the SCM (Source Control Management) Git. Secondly, I must be able to deploy and install the MISP threat intel infrastructure on a VM to actively contribute to this open-source project. Finally, I need to acquire skills in Bash and Unix scripting.
 
 Having had the opportunity to manipulate Git during my teaching hours and having a basic understanding of Bash and Unix scripting in the first year of my computer science course, I have some skills to rely on, although my skills in Bash are still very limited.
+
+
 
 
 ## Tools and software provided
@@ -61,6 +78,8 @@ Of course, I have also used other tools that I was familiar with, such as Git or
 Due to the fact that there aren't many new hardware and/or software tools, one might instinctively think that learning to use these devices is not so complicated, but it is only when we get into the thick of things that we realize the difficulty, which we will analyze directly in the next section.
 
 
+
+
 ## What I have done
 
 To successfully carry out my project, I decided to impose a chronology in the development of my work from the beginning of my internship. I noticed, when I was learning in school, that when we started a new "chapter", I tended to rush and didn't really take the time to understand the tools that I would be using. This often led me to quickly become lost in what I was doing and become distracted, and most of the time, it made me less productive than I thought I was.
@@ -68,11 +87,15 @@ To successfully carry out my project, I decided to impose a chronology in the de
 That's why, for my internship, I decided to start with a solid foundation, without any rush. To do this, I first decided to devote a period of time to research on all the devices I would be using. Only after I judged that I had a "complete" understanding of what I had to do and use, could I move on to the practical phase of implementing this project. I will thus segment the explanation of the work I undertook during this first month into 3 main points. First, I will inform you about the research I undertook and why, then I will present everything I was able to do during the practical phase that I am currently in, and I will finally briefly present where I am in the progress of my project and what I plan to do for this second month.
 
 
+
+
 ### Research  
 
 To successfully carry out my project, I decided to impose a chronology in the development of my work from the beginning of my internship. I noticed, when I was learning in school, that when we started a new "chapter", I tended to rush and didn't really take the time to understand the tools that I would be using. This often led me to quickly become lost in what I was doing and become distracted, and most of the time, it made me less productive than I thought I was.
 
 That's why, for my internship, I decided to start with a solid foundation, without any rush. To do this, I first decided to devote a period of time to research on all the devices I would be using. Only after I judged that I had a "complete" understanding of what I had to do and use, could I move on to the practical phase of implementing this project. I will thus segment the explanation of the work I undertook during this first month into 3 main points. First, I will inform you about the research I undertook and why, then I will present everything I was able to do during the practical phase that I am currently in, and I will finally briefly present where I am in the progress of my project and what I plan to do for this second month.
+
+
 
 
 ### Practical phases
@@ -95,6 +118,8 @@ Now let's move on to modifying the bootstrap.sh file. This file is much longer t
 - Code modification enabling the retrieval of CakePHP as well as the code enabling MISP.
 
 
+
+
 ### Progress and program
 
 Regarding my progress, I would personally say that I am halfway through accomplishing my project. The most complex phase for me has been familiarizing myself with these tools and programming in a way that avoids errors. This requires a good mastery and understanding of the code and the tools.
@@ -105,57 +130,11 @@ In summary, I cannot say that the organization I have chosen for the smooth runn
 
 ![Gantt chart created on HedgeDoc](Gantt.png)
 
-# CONCLUSION
+
+
+
+# Conclusion
 
 My feeling after this first month of internship is very positive for several reasons. Firstly, it allowed me to discover the world of work in the field in which I am studying. Having worked in the past as a student, I felt a real difference between these two worlds. Working in a field where we have accumulated a certain amount of knowledge that we can use effectively is extremely rewarding and encouraging. Learning new software and participating in the development of "real" projects in the sense that the company that welcomes me wants a result is a challenge that pushes me to excel, even if it can be complicated. Finally, all of this is supported by the fact that I had the chance to be in the middle of a very pleasant team, with colleagues who do not hesitate, from time to time, to come and see what I am doing and to offer me their help if needed. Moreover, some of these people do not speak French but exclusively English, which sometimes pushes me to improve my English while getting help with my work. That is why I can conclude that this first month of internship in the company is going very well for me.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

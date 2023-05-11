@@ -1,9 +1,19 @@
-#Rapport de stage 
+---
+title: "Rapport intermédiaire"
+author: [Boubrima Rawane, BUT2]
+date: "2023-05-10"
+...
 
+---
+title: Rapport intermédiaire
+author: BOUBRIMA Rawane
+date: 10 mai 2023
+---
 
 
 
 # Introduction
+
 Du 17 avril au 9 juin 2023 (8 semaines), j'ai pour objectif d'effectuer mon stage au sein de l'entreprise CIRCL, située au 122 Rue Adolphe Fischer, 1521 Gare Luxembourg. Pendant ce stage dans le domaine de l'informatique, plus précisément dans celui orienté résau, j'ai été impliqué dans un grand projet d'envergure internationale qui est MISP.
 CIRCL est une entreprise spécialisée dans la sécurité informatique et est une organisation récemment créée en 2012, qui a su faire les bons choix pour se faire un nom et une place en tant qu'acteur majeur de la sécurité informatique au Luxembourg. Elle n'est pas simplement reconnue au niveau national mais aussi internationalement grâce à ses projets, son engagement et son efficacité. 
 Avec Alexandre Dulaunoy en tant que tuteur, j'ai bénéficié des meilleures explications et de l'accompagnement nécessaire pour le bon déroulement de ce début de stage.
@@ -18,11 +28,16 @@ Néanmoins, le choix de ce stage et plus précisément de ce sujet de stage est 
 Afin de vous expliquer au mieux ce début de stage dans une entreprise informatique, je vais vous présenter en détail tout ce que j'ai fait depuis mon arrivée en vous exposant tout d'abord l'intitulé de mon sujet, les outils utilisés, puis je vais entrer dans le vif du sujet en montrant ce que j'ai fait en divisant cette grande partie en trois parties distinctes : l'une portant sur les recherches et l'autre sur les manipulations que j'ai réalisées et la dernière sur mon avancée. Enfin, je conclurai brièvement en donnant mon avis sur mon stage.
 
 
+
+
 # Sujet de stage 
 
 Afin de mener à bien l'explication détaillée de mon projet, je vais tout d'abord vous présenter l'intitulé de mon stage ainsi que ce qui m'a été initialement demandé lors de la préparation de celui-ci.
 Je vais ensuite poursuivre en vous présentant les outils qui m'ont été mis à disposition ainsi que les logiciels que l'on m'a demandé d'utiliser afin de mener à terme mon projet.
 Enfin, je finirais en vous présentant ce que j'ai pu faire durant ce premier mois et ce qu'il me reste à accomplir.
+
+
+
 
 ## Intitulé du sujet de stage 
 
@@ -39,7 +54,9 @@ Ayant eu la chance de manipuler Git lors de mes heures d'enseignement et d'avoir
 compétences sur lesquelles m'appuyer, même si mes compétences en Bash sont encore très limitées.
 
 
-## Outils et logiciel mis à disposition
+
+
+## Outils et logiciels mis à disposition
 
 Bien évidemment, au vu de mon sujet de stage, je ne serai pas amené à utiliser des switchs ou des routeurs ou ce genre de choses que l'on a pu pratiquer de nombreuses fois en travaux pratiques de réseaux avancés, par exemple, mais à manipuler exclusivement grâce à un ordinateur comme en cours de virtualisation, par exemple. De ce fait, un ordinateur portable sur lequel je travaille sous Ubuntu 22.04 est le seul outil matériel qui m'a été fourni. En termes de logiciel, j'ai été amené à utiliser principalement Vagrant et VirtualBox.
 J'ai par ailleurs utilisé d'autres outils suite aux conseils avisés de mon tuteur, tels que HedgeDoc qui me permet de mettre en page chaque jour les tâches accomplies, en donnant la possibilité par la même occasion à mes collègues de voir mon avancée et d'apporter des modifications à ce que j'ai fait. Mais ce n'est en revanche pas le seul outil de collaboration utilisé. On m'a proposé d'utiliser Element afin d'échanger avec chacune des personnes présentes ou avec elles toutes en même temps, afin d'avoir des réponses rapides.
@@ -65,14 +82,18 @@ J'ai bien sûr utilisé d'autres outils que je connaissais, tels que Git ou enco
 Du fait qu'il n'y a pas beaucoup de nouveaux outils matériels et/ou logiciels, instinctivement, une personne peut penser que l'apprentissage de l'utilisation de ces équipements n'est pas si compliqué, mais c'est uniquement lorsque l'on entre dans le vif du sujet que nous mesurons la difficulté, chose que nous allons analyser directement au point suivant.
 
 
+
+
 ## Ce que j'ai fait 
 
 Pour mener à bien mon projet, j'ai décidé de m'imposer dès le début de mon stage une chronologie dans l'élaboration de mon travail. J'ai pu remarquer, lorsque j'étais en plein apprentissage dans mon établissement scolaire, que lorsque nous entamions un nouveau "chapitre", j'avais tendance à me précipiter et ne prenais pas réellement le temps de comprendre correctement les outils que j'allais être amenée à utiliser. Cela me valait de très vite me perdre dans ce que je faisais et de me disperser, et m'amenait la plupart du temps à rester bloquée, et donc à ne plus être aussi productive que je pensais l'être.
 
 C'est pourquoi j'ai pris l'initiative, pour mon stage, de repartir sur des bases solides, sans aucune précipitation. Et pour ce faire, j'ai tout d'abord décidé de me consacrer une période de recherche sur tous les dispositifs que j'allais être amenée à utiliser. Seulement après avoir jugé que j'avais une compréhension assez "complète" de ce que je devais faire et utiliser, je pourrais passer à la phase pratique de la réalisation de ce projet. Je vais ainsi segmenter l'explication du travail que j'ai entrepris durant ce premier mois en 3 grands points. Je vais d'abord vous informer sur les recherches que j'ai entreprises et pourquoi, je vais ensuite vous présenter tout ce que j'ai pu faire lors de la phase pratique dans laquelle je suis actuellement, et je finirai par vous présenter très rapidement où je me situe dans l'avancement de mon projet ainsi que ce que je compte faire pour ce deuxième mois.
 
-### Recherches 
 
+
+
+### Recherches 
 
 Pour débuter correctement mon stage, j'ai tout d'abord tenu à me documenter un maximum tout d'abors sur les logiciel que je devrais utiliser, à savoir Vagrant et Virtualbox. Ces deux logiciel m'était 
 jusqu'au début de mon stage totalement inconnu du fait que je n'ai jamais ,ni lors de mon apprentissage ni lors des projet semestrielle (SAE), été amener à les utiliser ou ne serais-ce à en prendre 
@@ -93,7 +114,7 @@ meilleurs compréhension de ce qui m'était demander..
 
  
 
-### Phases pratique
+### Phase pratique
 
 Après m'être correctement documenté, il est maintenant temps de passer à la manipulation. En ce qui concerne mon sujet, la première étape de ma phase de manipulation est le changement des fichiers de 
 code présents dans le dossier misp-vagrant. Conformément aux propos précédents, j'ai commencé par utiliser VirtualBox à l'aide de Vagrant, puis j'ai continué par la modification des fichiers présents 
@@ -122,8 +143,9 @@ Passons maintenant à la modification du fichier bootstrap.sh. Ce fichier est bi
 - Modification du code permettant la récupération de CakePHP ainsi que du code permettant pour MISP.
 
 
-### Avancée et programme 
 
+
+### Avancée et programme 
 
 En ce qui concerne mon avancée, je dirais personnellement que je suis à la moitié de l'accomplissement de mon projet. La phase la plus complexe pour moi a été de prendre connaissance de ces outils et de la manière de programmer pour éviter les erreurs. Cela demande une bonne maîtrise et une bonne connaissance du code ainsi que des outils.
 Une fois cette partie difficile terminée, nous pourrons passer à la documentation du code afin d'expliquer les modifications apportées et pourquoi elles ont été faites. Une fois que j'aurai commenté l'ensemble de ces fichiers, je pourrai enfin intégrer mon projet au grand projet open source MISP. À ce moment-là, je considérerai que le projet est fini et surtout réussi.
@@ -133,7 +155,8 @@ En somme, je ne peux pas dire que l'organisation que j'ai choisie pour le bon d�
 
 
 
-# conclusion
+
+# Conclusion
 
 Mon ressenti après ce premier mois de stage est très positif et ce pour plusieurs raisons. Tout d'abord, cela m'a permis de découvrir le monde du travail dans le domaine dans lequel je fais mes études. Ayant déjà travaillé par le passé comme étudiant, j'ai ressenti une réelle différence entre ces deux mondes. Le fait de travailler dans un domaine dans lequel nous avons accumulé un certain nombre de connaissances que l'on peut ainsi utiliser à bon escient est extrêmement gratifiant et encourageant. Le fait d'apprendre de nouveaux logiciels et de participer à l'élaboration de projets "réels" dans le sens où l'entreprise qui m'accueille souhaite un résultat est un défi qui me pousse à me surpasser, même si cela peut être compliqué. Enfin, tout cela est appuyé par le fait que j'ai eu la chance de me retrouver au milieu d'une équipe très agréable, avec des collègues qui n'hésitent pas, de temps en temps, à venir voir ce que je fais et à me proposer leur aide si besoin. De plus, une partie de ces personnes ne parle pas français mais exclusivement anglais, ce qui pousse donc, par moment, à améliorer mon anglais tout en ayant de l'aide à la réalisation de mon travail. C'est pourquoi je peux conclure que ce premier mois de stage en entreprise se passe très bien pour ma part.
 
